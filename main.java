@@ -10,6 +10,7 @@ public static void main(String[] args){
 
         Scanner captcha = new Scanner(System.in);
 
+        System.out.println();
         System.out.println(
                 "Ethan is a second-year medical student struggling to keep up with the demanding coursework, feeling overwhelmed by failure and the pressure to live up to his family's expectations.\n");
         System.out.println(
@@ -169,17 +170,15 @@ public static void main(String[] args){
             }
         } else if (!secondStage && !glitch) {
             System.out.println(
-                    "Lena became a flight attendant 1and had a successful life, Julian on the other hand completely overcame his addiction after meeting the love of his life.");
+                    "Lena became a flight attendant and had a successful life, Julian on the other hand completely overcame his addiction after meeting the love of his life.");
             System.out.println("They later happily married");
             System.out.println("You passed the test.");
             passed = true;
         }
         System.out.println();
         System.out.println("passed: " + passed);
-        captcha.close();
 
-
-    Scanner s = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
     System.out.print(" Convert [ PHP , USD , JPY , GBP , CNY ] : "); 
     String currency1 = s.nextLine();
     System.out.print(" to [ PHP , USD , JPY , GBP , CNY ] : ");
@@ -189,6 +188,10 @@ public static void main(String[] args){
     currencies c = new currencies(currency1 , currency2 , amount);
     System.out.print("-> " + c.converter());
     s.close();
+        captcha.close();
+
+
+    
 
 
 
